@@ -1,0 +1,118 @@
+.main_banner
+	height: 100vh
+	background-size: cover
+	background-position: center 
+	background-repeat: no-repeat
+	overflow: hidden
+	&-fx-space 
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		overflow: hidden
+	.text
+		width: 100%
+		position: absolute
+		top: 50%
+		left: 0
+		transform: translateY(-50%)
+		.wrap 
+			max-width: 450px
+		h3
+			color: #c1b081
+			font-size: 39px
+			font-weight: 300
+			text-transform: uppercase
+			transform: translateX(8px)
+			span 
+				font-weight: 900
+		p 
+			color: #dfdfdf
+			font-size: 13px
+			line-height: 1.9
+
+.subpage_banner 
+	width: 100%
+	position: relative
+	.text-bg
+		position: absolute
+		display: table
+		top: 50%
+		font-family: "Lato"
+		font-weight: 900
+		font-size: 109px
+		left: 50%
+		transform: translate(-70%, -40%)
+		color: #777
+		opacity: .06
+		z-index: 10
+		text-transform: uppercase
+		line-height: 1
+	.fit-thumb
+		padding-bottom: 30.2%
+	.text
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		z-index: 1
+		h3 
+			font-size: 46.87px
+			font-weight: 900
+			color: white
+			font-family: "Lato"
+			text-transform: uppercase
+			letter-spacing: 15px
+			text-align: center
+		.social
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-top: 30px
+			> *
+				flex-shrink: 0
+				margin-left: 18px
+				margin-right: 18px
+			.line
+				width: 41px
+				height: 1px
+				background: #f3e9c6
+			a 
+				color: #f3e9c6
+
+@media (max-width: 991.82px) 
+	.subpage_banner .text 
+		bottom: 30px
+		transform: translateX(-50%)
+		h3
+			transform: translateX(12px)
+			font-size: 35px
+		.social
+			margin-top: 10px
+
+@media (max-width: 767.82px) 
+	.subpage_banner
+		.fit-thumb
+			padding-bottom: 49.2% 
+		.text 
+			bottom: 20px
+			transform: translateX(-50%)
+			h3 
+				font-size: 25px
+			.social
+				margin-top: 10px
+
+@media (max-width: 575.82px)
+	.main_banner .text h3
+		font-size: 25px
+
+	.subpage_banner 
+		.text-bg 
+			transform: translate(-50%,-40%)
+			font-size: 70px
+		.fit-thumb
+			padding-bottom: 69.2%
+		.text h3 
+			font-size: 20px
+			letter-spacing: 10px

@@ -1,0 +1,109 @@
+body
+	-webkit-tap-highlight-color: transparent
+	-webkit-touch-callout: none
+    min-height: 100%
+	-webkit-text-size-adjust: 100%
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	font-family: "Optima"
+	font-weight: normal
+h1,h2,h3,h4,h5,h6
+	font-family: "Lato"
+
+.section 
+	position: relative
+	&._hidden 
+		overflow: hidden
+.bg-cover 
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+._title	
+	margin-bottom: 30px
+	h3 
+		font-size: 49.06px
+		text-transform: uppercase
+		font-weight: 300
+		letter-spacing: 3px
+		span 
+			font-weight: 900
+	&._black h3 
+		color: #222221
+	&._white h3 
+		color: #fff
+._bar 
+	width: 50px
+	height: 5px
+	background: #c1b081
+
+.general_text_style 
+	p 
+		font-size: 14px
+		line-height: 2.5
+	&._c_black
+		colro: #222221
+	&._c_white
+		color: #fff
+.fit-thumb-wrap 
+	position: relative
+.fit-thumb
+	width: 100%
+	height: .1px 
+	padding-bottom: 120%
+	overflow: hidden
+	position: relative
+	img 
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		object-fit: cover
+		z-index: 1
+	&._square 
+		padding-bottom: 100%
+.g_btn 
+	display: table
+	width: 185px
+	height: 41px
+	font-weight: normal 
+	line-height: 41px
+	background: #c1b081
+	font-family: "Optima"
+	color: #e9e7da
+	text-transform: uppercase
+	padding: 0 16px
+	font-size: 13px
+	letter-spacing: 4px
+	box-shadow: 0 15px 34px rgba(#c89f35, .2)
+	transition: all .3s ease-in-out
+	&:hover
+		color: #e9e7da
+		text-decoration: none
+		box-shadow: 0 10px 14px rgba(#c89f35, .4)
+	&._darker 
+		background: #a08b5e
+@media (max-width: 575.82px)
+	._title h3
+		font-size: 30px
+
+@media (max-width: 360px) 
+	._title h3 
+		font-size: 25px
+
+@import './animation'
+@import './utils/components'
+@import './header'
+@import './video'
+@import './banner'
+@import './about'
+@import './film'
+@import './invest'
+@import './media'
+@import './yatch'
+@import './footer'
+
+// pages
+@import './pages/index_2'
+@import './pages/contact_p'
+@import './pages/news'

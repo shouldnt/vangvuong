@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Optima';
+    src: url('Optima-ExtraBlack.eot');
+    src: url('Optima-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+        url('Optima-ExtraBlack.woff2') format('woff2'),
+        url('Optima-ExtraBlack.woff') format('woff'),
+        url('Optima-ExtraBlack.ttf') format('truetype'),
+        url('Optima-ExtraBlack.svg#Optima-ExtraBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Optima';
+    src: url('Optima-Regular.eot');
+    src: url('Optima-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Optima-Regular.woff2') format('woff2'),
+        url('Optima-Regular.woff') format('woff'),
+        url('Optima-Regular.ttf') format('truetype'),
+        url('Optima-Regular.svg#Optima-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Optima';
+    src: url('Optima-Bold.eot');
+    src: url('Optima-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Optima-Bold.woff2') format('woff2'),
+        url('Optima-Bold.woff') format('woff'),
+        url('Optima-Bold.ttf') format('truetype'),
+        url('Optima-Bold.svg#Optima-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -1,0 +1,393 @@
+@mixin i2p($color)
+	font-size: 14.94px
+	font-weight: normal
+	font-family: "Optima"
+	color: $color
+	line-height: 2.2
+
+@keyframes scollDown
+	from 
+		transform: translateY(-100%)
+	95%
+		transform: translateY(100%)
+	100%
+		transform: translateY(100%)
+.scroll-down-box
+	pointer-events: none
+	position: absolute
+	top: 100vh
+	transform: translateY(-100%)
+	right: 100px
+	z-index: 10
+	display: flex
+	flex-direction: column
+	align-items: center
+	transition: all .3s ease-in-out
+	&.hide
+		opacity: 0
+		transform: translateY(-90%)
+	.bar
+		height: 200px
+		width: 1px
+		// background: #c1b081
+		position: relative
+		overflow: hidden
+		&:before
+			animation-name: scollDown
+			animation-duration: 3s
+			animation-iteration-count: infinite
+			position: absolute
+			content: ''
+			width: 1px
+			height: 200px
+			top: 0
+			transform: translateY(-100%)
+			left: 0
+			background: #c1b081
+			background: -moz-linear-gradient(90deg, rgba(193,176,129,1) 0%, rgba(193,176,129,0) 100%)
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(193,176,129,0)), color-stop(100%, rgba(193,176,129,1)))
+			background: -webkit-linear-gradient(90deg, rgba(193,176,129,1) 0%, rgba(193,176,129,0) 100%)
+			background: -o-linear-gradient(90deg, rgba(193,176,129,1) 0%, rgba(193,176,129,0) 100%)
+			background: -ms-linear-gradient(90deg, rgba(193,176,129,1) 0%, rgba(193,176,129,0) 100%)
+			background: linear-gradient(0deg, rgba(193,176,129,1) 0%, rgba(193,176,129,0) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1b081', endColorstr='#c1b081',GradientType=0 )
+	.text
+		font-family: "Lato"
+		font-weight: 300
+		font-size: 18px
+		color: #e9e7da
+		text-transform: uppercase
+		margin-top: 20px
+
+.i2_main_banner 
+	.block-1 
+		text-align: center
+		max-width: 859px
+		margin: 0 auto
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		min-height: 100vh
+		.bar
+			margin-top: 50px
+			width: 40px
+			height: 2px
+			background: #e0d4ac
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 15px
+		h4
+			font-family: "Lato"
+			font-weight: normal
+			font-size: 29px
+			color: white
+			text-transform: uppercase
+		h3 
+			font-family: "Lato"
+			font-weight: 900
+			font-size: 59px
+			color: #dfcc8b
+			text-transform: uppercase
+			letter-spacing: 4px
+			margin-bottom: 36px
+		p 
+			font-family: "Optima"
+			font-size: 16px
+			color: #f2f2f2
+			line-height: 2.5
+			margin-bottom: 0
+	
+	.block-2
+		display: flex
+		margin-top: 95px
+		.img 
+			width: 40%
+		.text
+			padding-top: 90px
+			width: 60%
+			padding-right: 68px
+			padding-left: 50px
+			h3
+				font-size: 45px
+				color: #f8f8f8
+				font-family: "Lato"
+				font-weight: 900
+				text-transform: uppercase
+				letter-spacing: 7px
+				margin-bottom: 37px
+				position: relative
+				span
+					position: relative
+				&:before
+					width: 165px
+					height: 1px
+					background: #ded2ab
+					position: absolute
+					content: ''
+					top: 50%
+					left: 0
+					transform: translateX(-50%)
+			p 
+				font-family: "Optima"
+				font-size: 16px
+				color: white
+				line-height: 2
+				margin-bottom: 22px
+
+
+.i2_invest-wrap
+	max-width: 740px
+	text-align: center
+	margin: 0 auto
+	padding-top: 120px
+	padding-bottom: 140px
+	.bar-thick
+		margin-top: 21px
+	.text
+		margin-top: 25px
+	p 
+		@include i2p(#767676)
+.i2-item-section
+	background-color: #f7f7f7
+	z-index: 10
+	&._2 
+		padding-bottom: 369px
+		padding-top: 122px
+		.i2-item:first-child
+			margin-bottom: 70px
+	&:not(._2)
+		.i2-item:first-child 
+			align-items: initial
+			.fit-thumb
+				transform: translateY(-48px)
+			.text 
+				padding-top: 75px
+		.i2-item:last-child
+			.fit-thumb
+				transform: translateY(55px)
+.i2-item-wrap
+.i2-item
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	.fit-thumb
+		padding-bottom: 141.93%
+		background: green
+		box-shadow: -26px 26px 65px rgba(#ddcaa6, .65)
+		&._shadow-twist
+			box-shadow: -19px 13px 94px hsla(39, 25%, 60%, 0.47)
+	.img 
+		width: 50%
+		padding-left: 96px
+		padding-right: 25px
+		
+	.text
+		width: 50%
+		padding-left: 54px
+		padding-right: 40px
+		text-align: center
+		._title-2 h3
+			white-space: nowrap
+		.bar-thick
+			margin-top: 21px
+		.p-wrap
+			margin-top: 25px
+			p
+				@include i2p(#222221)
+				margin-bottom: 30px
+				&:last-child
+					margin-bottom: 0
+	&._reverse
+		.img 
+			order: 1
+			padding-left: 74px
+			padding-right: 45px
+		.text
+			padding-right: 15px
+			padding-left: 80px
+.i2_media-section 
+	background-color: #232525
+	padding-top: 180px
+	padding-bottom: 140px
+.i2_media-wrap
+	position: relative
+	._title-2 
+		h3
+			font-size: 49px
+			color: #fff
+	.bar-thick
+		margin-top: 27px
+	.text
+		max-width: 600px
+		margin-left: auto
+		margin-right: 0
+		text-align: center
+		position: relative
+		padding-right: 60px
+		.p-wrap
+			margin-top: 29px
+		p 
+			@include i2p(#e0e0e0)
+
+@media (max-width: 1199.82px) 
+	.i2-item-section
+		padding: 100px 0
+	.i2-item-section:not(._2) .i2-item:first-child 
+		align-items: center
+		margin-bottom: 100px
+		.fit-thumb
+			transform: none
+		.text
+			padding-top: 0
+	.i2-item-section:not(._2) .i2-item:last-child 
+		.fit-thumb
+			transform: none
+	.i2-item 
+		align-items: center
+		.img
+			width: 40%
+			padding-left: 0
+			padding-right: 25px
+		.text
+			width: 60%
+			padding-left: 25px
+			padding-right: 0
+		&._reverse
+			.img
+				width: 40%
+				padding-right: 0
+				padding-left: 25px
+			.text
+				width: 60%
+				padding-right: 25px
+				padding-left: 0
+
+@media (max-width: 991.82px) 
+	.scroll-down-box
+		display: none
+	.i2_main_banner .block-2
+		flex-wrap: wrap
+		margin-top: 0
+		.img
+			width: 100%
+			position: relative
+			img
+				max-width: 200px
+				margin: 0 auto
+				display: block
+		.text
+			padding-top: 40px
+			position: relative
+			width: 100%
+			z-index: 1
+			background: #26211f
+			padding-bottom: 20px
+			margin-bottom: 50px
+	.i2_media-section
+		&:before
+			position: absolute
+			content: ''
+			top: 0
+			left: 0 
+			width: 100%
+			height: 100% 
+			background: #232525
+			opacity: .8
+	.i2_media-wrap .text
+		padding-right: 0
+		margin: 0 auto
+
+	.i2-item 
+		.fit-thumb
+			padding-bottom: 55%
+			box-shadow: 6px 6px 35px rgba(#ddcaa6, .65)
+		.img
+			width: 100%
+			padding-left: 0
+			padding-right: 0
+		.text 
+			width: 100%
+			padding-left: 0
+			padding-right: 0
+			margin-top: 40px
+		&._reverse
+			.fit-thumb
+				padding-bottom: 55%
+				box-shadow: 6px 6px 35px rgba(#ddcaa6, .65)
+			.img
+				width: 100%
+				padding-left: 0
+				padding-right: 0
+				order: 0
+			.text 
+				width: 100%
+				padding-left: 0
+				padding-right: 0
+				margin-top: 40px
+
+@media (max-width: 767.82px)
+	.i2_main_banner 
+		.block-1 
+			h3
+				font-size: 40px
+
+	.i2_invest-wrap 
+		padding: 80px 0
+		._title-2 h3
+			font-size: 30px
+	.i2-item .text ._title-2 h3
+		font-size: 32px
+
+	.i2-item-section._2
+		padding-top: 100px
+		padding-bottom: 220px
+	
+	.i2_media-section
+		padding: 100px 0
+	.i2_media-wrap ._title-2 h3
+		font-size: 35px
+
+@media (max-width: 575.82px) 
+	.i2_main_banner 
+		.block-1 
+			h4 
+				font-size: 23px
+			h3
+				font-size: 25px
+				margin-bottom: 20px
+			p 
+				line-height: 2.2
+		.block-2
+			.text
+				padding-left: 20px
+				padding-right: 20px
+				h3 
+					font-size: 30px
+				p 
+					text-align: justify
+	.i2_invest-wrap 
+		padding-top: 50px
+		padding-bottom: 50px
+		._title-2 h3 
+			font-size: 23px
+
+	.i2_media-wrap ._title-2 h3
+		font-size: 30px
+
+	.i2-item-section
+		padding: 60px 0
+	.i2-item-section._2
+		padding-top: 60px
+	.i2-item .text ._title-2 h3
+		font-size: 23px
+
+
+@media (max-width: 321px) 
+	.i2_main_banner .block-1 p
+		font-size: 14px
+		line-height: 2
+
+	.i2_invest-wrap ._title-2 h3 
+		font-size: 20px
+

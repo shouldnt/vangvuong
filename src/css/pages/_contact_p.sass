@@ -1,0 +1,132 @@
+.input-cp-style 
+	width: 100%
+	background: #f6f6f6
+	border: 1px solid rgba(black, .15)
+	margin-bottom: 30px
+	padding-left: 15px
+	padding-right: 15px
+	font-family: "Optima"
+	font-size: 14px
+	color: #999
+	&:focus
+		outline: none
+input.input-cp-style
+	height: 45px
+	box-sizing: border-box
+textarea.input-cp-style
+	padding-top: 15px
+	padding-bottom: 15px
+	min-height: 165px
+.cp-section
+	z-index: 10
+.cp-form 
+	padding: 87px 126px
+	box-shadow: 0 0 111px rgba(#c1af81, .35)
+	border-radius: 4px
+	transform: translateY(-82px)
+	background: #fff
+	button[type="submit"]
+		margin-top: 30px
+		font-size: 14px
+		font-family: "Lato"
+		color: #3b3b3b
+		background: #cec19c
+		text-transform: uppercase
+		border: none
+		display: table
+		margin-left: auto
+		margin-right: auto
+		height: 55px
+		line-height: 53px
+		padding: 0 35px
+		letter-spacing: 3px
+		transition: all .3s ease-in-out
+		&:hover
+			box-shadow: 0 0 30px rgba(#cec19c, .7)
+
+.cp_map-section
+	display: flex 
+
+.cp_map-left
+	width: 39.87%
+	background: #c1af81
+	padding: 70px
+	.info
+		margin-bottom: 30px
+		h5
+			display: flex
+			align-items: center
+			color: white
+			font-size: 15.62px
+			font-family: 'Montserrat'
+			font-weight: bold
+			letter-spacing: 2px
+			img 
+				width: 16px
+				margin-right: 17px
+		p 
+			padding-left: 33px
+			font-size: 15.62px
+			color: white
+			font-family: "Montserrat"
+			font-weight: 300
+			letter-spacing: 2px
+.cp_map-right
+	width: 60.13%
+	position: relative
+	.fit-thumb
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		padding-bottom: 0
+	iframe
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+@media (max-width: 991.82px) 
+	.cp-section
+		padding-top: 80px
+		padding-bottom: 80px
+	.cp-form
+		transform: none
+		padding: 87px 89px
+
+	.cp_map-left
+		padding: 40px
+
+@media (max-width: 767.82px)
+	.cp-form
+		padding: 47px
+
+	.cp_map-section
+		flex-wrap: wrap
+	.cp_map-left 
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		.info
+			width: 50%
+			padding-left: 15px
+			padding-right: 15px
+	.cp_map-right
+		width: 100%
+		.fit-thumb
+			position: relative
+
+@media (max-width: 575.82px)
+	.cp-section
+		padding: 25px 0
+
+	.cp_map-left .info
+		width: 100%
+
+@media (max-width: 420px) 
+	.cp-form
+		padding: 30px 15px
+
+

@@ -1,0 +1,71 @@
+.video-popup
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	display: flex
+	justify-content: center
+	align-items: center
+	pointer-events: none
+	opacity: 0
+	transform: scale(1.1, 1.1)
+	transition: all .3s ease-in-out
+	z-index: -1
+	&.opened
+		z-index: 300
+		opacity: 1
+		transform: none
+		pointer-events: auto
+	.overlay
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(black, .5)
+	.frame-container
+		width: 800px
+		position: relative
+		.x-btn
+			position: absolute
+			top: 0
+			left: 0
+			transform: translateX(-100%)
+			width: 30px
+			height: 30px
+			background: rgba(#000, .3)
+			cursor: pointer
+			transition: all .3s ease-in-out
+			&:hover
+				background: black
+			&:before, &:after
+				width: 20px
+				height: 1px
+				background: red
+				position: absolute
+				content: ''
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%) rotate(45deg)
+			&:after
+				transform: translate(-50%, -50%) rotate(-45deg)
+		.fit-thumb
+			padding-bottom: 56.25%
+		.video-frame
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+		.video-js .vjs-big-play-button
+			display: none!important
+@media (max-width: 991.82px)
+	.video-popup .frame-container 
+		width: 80%
+		.x-btn
+			transform: none
+			background: black
+@media (max-width: 575.82px)
+	.video-popup .frame-container
+		width: calc(100% - 30px)

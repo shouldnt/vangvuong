@@ -1,0 +1,239 @@
+.footer_form
+	margin-left: 45px
+	margin-right: 45px
+	padding-left: 75px
+	padding-right: 75px
+	padding-top: 50px
+	padding-bottom: 165px
+	transform: translateY(-50%)
+	display: flex
+	flex-wrap: wrap
+	position: relative
+	._title 
+		width: 100%
+	.text 
+		width: 26.63%
+		padding-right: 55px
+		p 
+			color: #fff
+			line-height: 1.5
+			font-size: 13px
+			margin-bottom: 10px
+		.social 
+			display: flex
+			align-items: center
+			margin-top: 40px
+			a 
+				font-size: 20px
+				color: #c1b081
+				margin-right: 20px
+				transition: all .3s ease-in-out
+				&:hover 
+					color: #e9e7da
+	.form 
+		width: 73.37%
+		.send-btn 
+			border: none
+			background: #e9e7da
+			color: #222221
+			font-family: "Optima"
+			font-size: 13px
+			font-weight: 400
+			text-transform: uppercase
+			height: 41px
+			line-height: 41px
+			min-width: 120px
+			display: table
+			margin-left: auto
+			margin-right: 0
+			text-align: left
+			padding-left: 15px
+			padding-right: 15px
+			box-shadow: 0 15px 34px rgba(black, .1)
+			transition: all .3s ease-in-out
+			cursor: pointer
+			&:hover 
+				box-shadow: 0 5px 14px rgba(black, .25)
+
+.form_grid
+	display: flex
+	flex-wrap: wrap
+	margin-left: -5px
+	margin-right: -5px
+	> * 
+		flex-shrink: 0
+	.form_box 
+		padding-left: 5px
+		padding-right: 5px
+		width: 100%
+		@media (min-width: 576px)
+			&.sm_50
+				width: 50%
+		@media (min-width: 768px) 
+			&.md_100 
+				width: 100%
+			&.md_50 
+				width: 50%
+			&.md_55
+				width: 55%
+			&.md_45
+				width: 45%
+
+input._t1 
+	width: 100%
+	background: #af9c6f
+	border: none
+	font-family: "Optima"
+	font-weight: 400
+	font-size: 11px
+	color: white
+	transition: all .3s ease-in-out
+	margin-bottom: 10px
+	line-height: 45px
+	padding-left: 15px
+	padding-right: 15px
+	-moz-appearance:    textfield
+    -webkit-appearance: textfield
+    appearance: textfield
+	&:focus 
+		box-shadow: 1px 3px 10px rgba(134, 116, 76, 0.8)
+		outline: none
+	&::placeholder
+		color: white
+		opacity: 1
+		letter-spacing: 2px
+		text-transform: uppercase
+	&:-ms-input-placeholder
+		color: white
+		opacity: 1
+		letter-spacing: 2px
+		text-transform: uppercase
+	&::-ms-input-placeholder
+		color: white
+		opacity: 1
+		letter-spacing: 2px
+		text-transform: uppercase
+	&::-webkit-input-placeholder
+		color: white
+		opacity: 1
+		letter-spacing: 2px
+		text-transform: uppercase
+textarea._t1 
+	min-height: 104px
+	width: 100%
+	background: #af9c6f
+	border: none
+	font-family: "Optima"
+	font-weight: 400
+	font-size: 11px
+	color: white
+	transition: all .3s ease-in-out
+	margin-bottom: 10px
+	line-height: 25px
+	display: flex
+	padding-left: 15px
+	padding-right: 15px
+	-moz-appearance:    textfield
+    -webkit-appearance: textfield
+    appearance: textfield
+	&:focus 
+		box-shadow: 1px 3px 10px rgba(134, 116, 76, 0.8)
+		outline: none
+	&::placeholder
+		color: white
+		opacity: 1
+		letter-spacing: 2px
+		text-transform: uppercase
+	&:-ms-input-placeholder
+		color: white
+		opacity: 1
+		letter-spacing: 2px
+		text-transform: uppercase
+	&::-ms-input-placeholder
+		color: white
+		opacity: 1
+		letter-spacing: 2px
+		text-transform: uppercase
+	&::-webkit-input-placeholder
+		color: white
+		opacity: 1
+		letter-spacing: 2px
+		text-transform: uppercase
+
+.footer-section.nav-only .footer_nav
+	transform: none
+	padding-top: 50px
+	padding-bottom: 80px
+.footer_nav 
+	transform: translateY(-80%)
+	.logo 
+		width: 100px
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 40px
+		img 
+			max-width: 100%
+	nav > ul 
+		display: flex 
+		justify-content: space-around
+		padding-left: 0
+		margin-bottom: 0
+		list-style: none
+		li 
+			margin-left: 10px
+			margin-right: 10px
+		a 
+			display: block
+			font-size: 13px
+			font-weight: 400
+			font-family: "Lato"
+			color: #e9e7da
+			text-transform: uppercase
+			letter-spacing: 1px
+			transition: all .3s ease-in-out
+			&:hover
+				text-decoration: none
+				color: #c1b081
+
+@media (max-width: 1199.82px) 
+	.footer_form
+		margin-left: 0 
+		margin-right: 0
+		padding-left: 50px
+		padding-right: 50px
+		padding-bottom: 80px
+		transform: translateY(-30%)
+		margin-bottom: 30px
+	.footer_nav 
+		transform: translateY(-67px)
+		nav>ul
+			justify-content: center
+			flex-wrap: wrap
+			a 
+				margin-bottom: 20px
+@media (max-width: 991.82px) 
+	.footer_form
+		margin-bottom: 0
+		.text 
+			width: 100%
+		.form 
+			width: 100%
+			margin-top: 50px
+@media (max-width: 767.82px)
+	.footer_form
+		margin-bottom: 0
+		transform: translateY(-20%)
+	.footer_nav 
+		transform: translateY(-80px)
+@media (max-width: 575.82px) 
+	.footer_form
+		padding-left: 30px
+		padding-right: 30px
+
+
+@media (max-width: 420px) 
+	.footer_form
+		padding-left: 15px
+		padding-right: 15px
+	.footer_nav nav>ul a
+		text-align: center

@@ -1,0 +1,67 @@
+.film-section
+	padding: 100px 0
+	.left-bg 
+		position: absolute
+		top: 0
+		left: 0
+		width: 43% 
+		height: 100%
+.film_
+	display: flex
+	flex-wrap: wrap
+	align-items: flex-end
+	> * 
+		flex-shrink: 0
+	&img
+		width: 48%
+	&text 
+		width: 52%
+		margin-bottom: 20px
+.film_img 
+	.fit-thumb
+		padding-bottom: 100%
+		box-shadow: 0 10px 50px 5px rgba(45,45,45, .35)
+.film_text 
+	padding-left: 73px
+	._sm-grid 
+		margin-top: 40px
+		margin-bottom: 15px
+
+._sm-grid
+	display: flex
+	flex-wrap: wrap
+	&-box
+		display: flex
+		align-items: center
+		margin-bottom: 35px
+		.ic 
+			flex-shrink: 0
+			width: 42px
+			text-align: right
+			img 
+				max-width: 100%
+		.text 
+			padding-left: 20px
+			p 
+				margin-bottom: 0
+				line-height: 1.5
+		width: 165px
+		margin-right: 20px
+
+@media (max-width: 1199.82px)
+	.film-section .left-bg
+		opacity: 0
+	.film_text
+		width: 100%
+		padding-left: 0
+	.film_img
+		margin-top: 20px
+		width: 100%
+		order: 1
+		.fit-thumb
+			padding-bottom: 50%
+
+@media (max-width: 575.82px) 
+	.film-section
+		padding-top: 50px
+		padding-bottom: 40px
